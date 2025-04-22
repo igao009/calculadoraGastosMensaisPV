@@ -1,0 +1,118 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+/* Formulário de cadastro de gastos */
+#secao-formulario {
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-gasto label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#formulario-gasto input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formulario-gasto button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#formulario-gasto button:hover {
+    background-color: #0056b3;
+}
+
+/* Lista de gastos */
+#secao-lista {
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tabela-gastos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#tabela-gastos th, #tabela-gastos td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+#tabela-gastos th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+#tabela-gastos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabela-gastos tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Destaque para valores altos */
+.high-value {
+    color: red;
+    font-weight: bold;
+}
+
+/* Total acumulado */
+#secao-total {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#total-gasto {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

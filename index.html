@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gastos Mensais</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <img src="unicesumar_logo.png" alt="Logo da Calculadora" style="height: 100px; margin-right: 10px;">
+        <h1>Calculadora de Gastos Mensais</h1>
+    </header>
+
+    <main>
+        <!-- Formulário de cadastro de gastos -->
+        <section id="secao-formulario">
+            <h2>Registrar Gasto</h2>
+            <form id="formulario-gasto">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+
+                <label for="valor">Valor (R$):</label>
+                <input type="number" id="valor" name="valor" step="0.01" required>
+
+                <label for="categoria">Categoria:</label>
+                <input type="text" id="categoria" name="categoria" required>
+
+                <button type="submit">Adicionar Gasto</button>
+            </form>
+        </section>
+
+        <!-- Lista de gastos -->
+        <section id="secao-lista">
+            <h2>Lista de Gastos</h2>
+            <table id="tabela-gastos">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor (R$)</th>
+                        <th>Categoria</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas de gastos serão inseridas dinamicamente aqui -->
+                </tbody>
+            </table>
+            <div id="secao-total">
+                <h3>Total Gasto</h3>
+                <p id="total-gasto">R$ 0,00</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
